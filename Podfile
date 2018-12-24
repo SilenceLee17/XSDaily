@@ -6,6 +6,7 @@ target 'Daily' do
   # use_frameworks!
 
   # Pods for Daily
+  pod 'Masonry', '1.0.0'
 
   target 'DailyTests' do
     inherit! :search_paths
