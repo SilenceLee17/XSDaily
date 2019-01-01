@@ -8,8 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@interface XSLinkObject : NSObject
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *imageName;
+
+@end
+
 @interface XSLinkPresenter : NSObject
 
-@property (nonatomic, strong) NSMutableArray *dataArray;
+- (NSInteger)numberOfItemsInSection;
+- (XSLinkObject *)linkObjectAtIndex:(NSInteger)index;
+- (void)didSelectItemAtIndex:(NSInteger)index;
+
+- (void)moveItemAtIndex:(NSInteger)sourceIndex toIndex:(NSInteger)destinationIndex;
 
 @end

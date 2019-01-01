@@ -12,11 +12,12 @@
 		F32876C121CE7D9B000CB896 /* XSLinkPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F32876C021CE7D9B000CB896 /* XSLinkPresenter.m */; };
 		F34A350821CD015800CE8F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A350721CD015800CE8F64 /* AppDelegate.m */; };
 		F34A350B21CD015800CE8F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A350A21CD015800CE8F64 /* ViewController.m */; };
-		F34A350E21CD015800CE8F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A350C21CD015800CE8F64 /* Main.storyboard */; };
 		F34A351021CD015A00CE8F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34A350F21CD015A00CE8F64 /* Assets.xcassets */; };
 		F34A351321CD015A00CE8F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A351121CD015A00CE8F64 /* LaunchScreen.storyboard */; };
 		F34A351621CD015A00CE8F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A351521CD015A00CE8F64 /* main.m */; };
 		F34A352021CD015A00CE8F64 /* DailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A351F21CD015A00CE8F64 /* DailyTests.m */; };
+		F378674221DB1A1D000571F8 /* XSLink.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F378674121DB1A1D000571F8 /* XSLink.xcassets */; };
+		F3DD842A21D8CBC7002234C9 /* XSLinkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DD842921D8CBC7002234C9 /* XSLinkCollectionViewCell.m */; };
 		FD0E997288AF28FF77BEAE06 /* libPods-Daily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1DF71D612D96B7BC28F695 /* libPods-Daily.a */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,6 @@
 		F34A350721CD015800CE8F64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F34A350921CD015800CE8F64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F34A350A21CD015800CE8F64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F34A350D21CD015800CE8F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F34A350F21CD015A00CE8F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F34A351221CD015A00CE8F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F34A351421CD015A00CE8F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,9 @@
 		F34A351B21CD015A00CE8F64 /* DailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34A351F21CD015A00CE8F64 /* DailyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyTests.m; sourceTree = "<group>"; };
 		F34A352121CD015A00CE8F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F378674121DB1A1D000571F8 /* XSLink.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XSLink.xcassets; sourceTree = "<group>"; };
+		F3DD842821D8CBC7002234C9 /* XSLinkCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSLinkCollectionViewCell.h; sourceTree = "<group>"; };
+		F3DD842921D8CBC7002234C9 /* XSLinkCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSLinkCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		F32876B921CE7132000CB896 /* Link */ = {
 			isa = PBXGroup;
 			children = (
+				F378674021DB19FC000571F8 /* Resource */,
 				F32876BE21CE7D7D000CB896 /* Presenter */,
 				F32876BD21CE7D76000CB896 /* View */,
 			);
@@ -99,6 +103,8 @@
 			children = (
 				F32876BA21CE715E000CB896 /* XSLinkViewController.h */,
 				F32876BB21CE715E000CB896 /* XSLinkViewController.m */,
+				F3DD842821D8CBC7002234C9 /* XSLinkCollectionViewCell.h */,
+				F3DD842921D8CBC7002234C9 /* XSLinkCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,7 +146,6 @@
 				F34A350721CD015800CE8F64 /* AppDelegate.m */,
 				F34A350921CD015800CE8F64 /* ViewController.h */,
 				F34A350A21CD015800CE8F64 /* ViewController.m */,
-				F34A350C21CD015800CE8F64 /* Main.storyboard */,
 				F34A350F21CD015A00CE8F64 /* Assets.xcassets */,
 				F34A351121CD015A00CE8F64 /* LaunchScreen.storyboard */,
 				F34A351421CD015A00CE8F64 /* Info.plist */,
@@ -156,6 +161,14 @@
 				F34A352121CD015A00CE8F64 /* Info.plist */,
 			);
 			path = DailyTests;
+			sourceTree = "<group>";
+		};
+		F378674021DB19FC000571F8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F378674121DB1A1D000571F8 /* XSLink.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		F7301A64E66312F25518F8FB /* Pods */ = {
@@ -255,9 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F378674221DB1A1D000571F8 /* XSLink.xcassets in Resources */,
 				F34A351321CD015A00CE8F64 /* LaunchScreen.storyboard in Resources */,
 				F34A351021CD015A00CE8F64 /* Assets.xcassets in Resources */,
-				F34A350E21CD015800CE8F64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +392,7 @@
 				F34A351621CD015A00CE8F64 /* main.m in Sources */,
 				F32876C121CE7D9B000CB896 /* XSLinkPresenter.m in Sources */,
 				F34A350821CD015800CE8F64 /* AppDelegate.m in Sources */,
+				F3DD842A21D8CBC7002234C9 /* XSLinkCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,14 +415,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F34A350C21CD015800CE8F64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F34A350D21CD015800CE8F64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F34A351121CD015A00CE8F64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
