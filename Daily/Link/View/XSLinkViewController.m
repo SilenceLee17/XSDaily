@@ -53,22 +53,6 @@ static NSString *const kReuseIdentifier = @"XSLinkCollectionViewCell";
     [_presenter didSelectItemAtIndex:indexPath.row];
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-      UICollectionViewCell * cell = [collectionView cellForItemAtIndexPath:indexPath];
-      [UIView animateWithDuration:1 animations:^{
-        cell.transform = CGAffineTransformMakeScale(1.5f, 1.5f);
-      }];
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell * cell = [collectionView cellForItemAtIndexPath:indexPath];
-    [UIView animateWithDuration:1 animations:^{
-        cell.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
-    }];
-}
-
 //MARK: Protocol - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -112,7 +96,8 @@ static NSString *const kReuseIdentifier = @"XSLinkCollectionViewCell";
 - (void)handleLongPressRecognizer:(UILongPressGestureRecognizer *)gesture
 {
     switch (gesture.state) {
-        case UIGestureRecognizerStateBegan:{
+        case UIGestureRecognizerStateBegan:
+        {
             NSIndexPath *path = [self.collectionView indexPathForItemAtPoint:[gesture locationInView:gesture.view]];
             if(path == nil){
                 break;
@@ -121,13 +106,19 @@ static NSString *const kReuseIdentifier = @"XSLinkCollectionViewCell";
         }
             break;
         case UIGestureRecognizerStateChanged:
+        {
             [self.collectionView updateInteractiveMovementTargetPosition:[gesture locationInView:gesture.view]];
+        }
             break;
         case UIGestureRecognizerStateEnded:
+        {
             [self.collectionView endInteractiveMovement];
+        }
             break;
         default:
+        {
             [self.collectionView cancelInteractiveMovement];
+        }
             break;
     }
 }
