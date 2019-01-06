@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA098C607BA1CCA2A91C5E6A /* libPods-DailyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D75995384360F563BFA8B8 /* libPods-DailyTests.a */; };
+		1749C50C419514431FC9AB51 /* Pods_DailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB41FCB16BDB13D313CDFCC /* Pods_DailyTests.framework */; };
+		77DB2AC5A28A1C39CABD3394 /* Pods_Daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0662DBBCCA4201367B5D44 /* Pods_Daily.framework */; };
 		F32876BC21CE715E000CB896 /* XSLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32876BB21CE715E000CB896 /* XSLinkViewController.m */; };
 		F32876C121CE7D9B000CB896 /* XSLinkPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F32876C021CE7D9B000CB896 /* XSLinkPresenter.m */; };
 		F34A350821CD015800CE8F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A350721CD015800CE8F64 /* AppDelegate.m */; };
@@ -18,7 +19,6 @@
 		F34A352021CD015A00CE8F64 /* DailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A351F21CD015A00CE8F64 /* DailyTests.m */; };
 		F378674221DB1A1D000571F8 /* XSLink.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F378674121DB1A1D000571F8 /* XSLink.xcassets */; };
 		F3DD842A21D8CBC7002234C9 /* XSLinkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DD842921D8CBC7002234C9 /* XSLinkCollectionViewCell.m */; };
-		FD0E997288AF28FF77BEAE06 /* libPods-Daily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1DF71D612D96B7BC28F695 /* libPods-Daily.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43D75995384360F563BFA8B8 /* libPods-DailyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DailyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53153782C7C965C56A03BE1B /* Pods-Daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daily/Pods-Daily.release.xcconfig"; sourceTree = "<group>"; };
+		5FB41FCB16BDB13D313CDFCC /* Pods_DailyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7D11336C62D9D1D1460740 /* Pods-DailyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTests/Pods-DailyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D0662DBBCCA4201367B5D44 /* Pods_Daily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9B28A4A5AA8B4EB1EA7C37 /* Pods-DailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTests/Pods-DailyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		923EBD6FA733FF956FDFCB46 /* Pods-Daily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daily/Pods-Daily.debug.xcconfig"; sourceTree = "<group>"; };
-		BC1DF71D612D96B7BC28F695 /* libPods-Daily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Daily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32876BA21CE715E000CB896 /* XSLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSLinkViewController.h; sourceTree = "<group>"; };
 		F32876BB21CE715E000CB896 /* XSLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSLinkViewController.m; sourceTree = "<group>"; };
 		F32876BF21CE7D9B000CB896 /* XSLinkPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSLinkPresenter.h; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0E997288AF28FF77BEAE06 /* libPods-Daily.a in Frameworks */,
+				77DB2AC5A28A1C39CABD3394 /* Pods_Daily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA098C607BA1CCA2A91C5E6A /* libPods-DailyTests.a in Frameworks */,
+				1749C50C419514431FC9AB51 /* Pods_DailyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 		16960DF84B5D88414C95CAD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC1DF71D612D96B7BC28F695 /* libPods-Daily.a */,
-				43D75995384360F563BFA8B8 /* libPods-DailyTests.a */,
+				7D0662DBBCCA4201367B5D44 /* Pods_Daily.framework */,
+				5FB41FCB16BDB13D313CDFCC /* Pods_DailyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,9 +338,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Daily/Pods-Daily-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -545,10 +548,7 @@
 				DEVELOPMENT_TEAM = 63E33YXJG9;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.Daily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -564,10 +564,7 @@
 				DEVELOPMENT_TEAM = 63E33YXJG9;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.Daily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -582,11 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63E33YXJG9;
 				INFOPLIST_FILE = DailyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.DailyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,11 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63E33YXJG9;
 				INFOPLIST_FILE = DailyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.DailyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
